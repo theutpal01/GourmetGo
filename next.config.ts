@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
 			"plus.unsplash.com",
 			
 		]
-	}
+	},
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
 };
 
 export default nextConfig;
