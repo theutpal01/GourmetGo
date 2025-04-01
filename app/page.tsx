@@ -7,7 +7,7 @@ import FoodView from './components/views/FoodView'
 import Filters from './components/layouts/Filters'
 import OrdersView from './components/views/OrdersView'
 
-const page = () => {
+const Page = () => {
 	return (
 
 		<div className="grid grid-cols-12 grid-rows-7 w-full h-full">
@@ -36,4 +36,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default Page
