@@ -22,8 +22,13 @@ interface IconBtnType {
 	children: React.ReactNode
 }
 
+interface ToggleWrapperType {
+	className?: string,
+	children: React.ReactNode
+}
+
 interface ToggleBtnType {
-	className?: string, 
+	className?: string,
 	name: string,
 	active?: boolean,
 	onClick: (e?: React.MouseEvent<HTMLButtonElement>) => (void),
@@ -31,7 +36,7 @@ interface ToggleBtnType {
 }
 
 interface ProfileBtnType {
-	className?: string, 
+	className?: string,
 	name: string,
 	profileImg: string,
 	userName: string,
@@ -51,4 +56,35 @@ interface SearchbarType {
 	placeholder: string,
 	name: string,
 	onClick: () => (void)
+}
+
+interface AuthFormType {
+	className?: string,
+	heading: string,
+	children: React.ReactNode
+}
+
+interface FilterBtnType {
+	className?: string,
+	text: string,
+	id: string,
+	active: boolean,
+	onClick: () => (void),
+	children: React.ReactNode
+}
+
+interface FilterOptionType {
+	className?: string,
+	text: string,
+	id: string
+}
+
+interface InputType {
+	className?: string,
+	name: string
+	value: string,
+	type?: string,
+	placeholder?: string,
+	onChange: () => (void),
+	children: React.ReactNode
 }

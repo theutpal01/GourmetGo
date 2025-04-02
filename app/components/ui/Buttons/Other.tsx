@@ -3,7 +3,7 @@ import React from "react"
 import { H3, SH3 } from "../typograhy/Headings"
 import { Para } from "../typograhy/TextFormats"
 
-const ToggleWrapper = ({ className, children }: { className?: string, children: React.ReactNode }) => {
+const ToggleWrapper = ({ className, children }: ToggleWrapperType) => {
 	return (
 		<div className={`flex rounded-full bg-primary border border-text-secondary/20 overflow-hidden ${className}`}>
 			{children}
